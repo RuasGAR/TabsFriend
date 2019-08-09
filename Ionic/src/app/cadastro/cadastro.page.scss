@@ -30,25 +30,23 @@ h6{
 ion-list {
  display:contents;
 }
-.bg-transparent {
-    --background: #fff;
-    padding: 0px;
-}
-.item-native {
-    border-radius: 10px;
-}
 
 ion-input {
     --color:rgb(0,0,0);
-    
+      
 }
-ion-label{
-    --color:beige;
+
+#entrada {
+    background-color: #fbfbfb;
+    border: 1px solid #9E9E9E;
+    box-sizing: border-box;
+    border-radius: 7px;
 }
+   
 .invalid {
    
     ion-input{
-        border-bottom: 1px solid red;
+        border-bottom: 2px solid red;
     }
 }
 
