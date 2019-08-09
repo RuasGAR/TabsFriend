@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Tab1Page } from './tab1.page';
-import { PrepostComponent } from './app/componentes.prepost';
 
 @NgModule({
   imports: [
@@ -13,7 +12,6 @@ import { PrepostComponent } from './app/componentes.prepost';
     FormsModule,
     RouterModule.forChild([{ path: '', component: Tab1Page }])
   ],
-  declarations: [Tab1Page,
-  PrepostComponent]
+  declarations: [Tab1Page]
 })
 export class Tab1PageModule {}
