@@ -31,7 +31,7 @@ ion-list {
  display:contents;
 }
 .bg-transparent {
-    --background: rgba(255,255,255,0.1);
+    --background: #fff;
     padding: 0px;
 }
 .item-native {
@@ -39,7 +39,7 @@ ion-list {
 }
 
 ion-input {
-    --color:beige;
+    --color:rgb(0,0,0);
     
 }
 ion-label{
