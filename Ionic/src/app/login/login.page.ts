@@ -16,7 +16,7 @@ export class LoginPage implements OnInit {
 
   }  
   ngOnInit() {}
-  
+
   submitForm(form) {
     console.log(form);
     console.log(form.value);
