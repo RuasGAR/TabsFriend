@@ -9,18 +9,15 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 export class CadastroPage implements OnInit {
   registerForm: FormGroup;
   constructor(public formbuilder: FormBuilder) { 
+
     this.registerForm = this.formbuilder.group({
       name:[null, [Validators.required , Validators.minLength(10)]],
       email:[null, [Validators.required, Validators.email]],
-      username:  [null, [Validators.required]],
-      password: [null, [Validators.required, Validators.minLength(8)]]
-      
-
+      username:[null, [Validators.required]],
+      password:[null, [Validators.required, Validators.minLength(8)]]
     });
   }
-
-  ngOnInit() {
-  }
+  ngOnInit(){}
   submitForm(form) {
     console.log(form);
     console.log(form.value);
