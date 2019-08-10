@@ -1,6 +1,10 @@
 ion-card{
 	border-radius:20px;
+	--background:black;
+	--color:#ffffff !important;
 }
-.prophilephoto{
-	border-radius:20px;
+.profileinfo{
+	--background:#ffffff;
+	--color:#cc0000;	
 }
+
