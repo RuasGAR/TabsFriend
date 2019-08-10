@@ -1,0 +1,39 @@
+.photo{
+    border-radius:10px;
+    width:100%;
+}
+
+.setcenter{
+    display:flex;
+    justify-content:center;
+
+}
+.idphoto{
+    width: 50px;
+    height: 50px;
+    border-radius:100%;
+    margin-left:3vw;
+    box-shadow:0px 2px 3px black;
+
+  
+}
+
+.photo{
+    width:95%;
+    width:95%;
+}
+.text{
+    margin-left:3.3vw;
+    margin-bottom:3vh;
+    margin-top:1.2vh;
+    font-size: 1.2em;
+    padding-right:1vw;
+    line-height: 1.3125;
+}
+
+ion-chip{
+    font-weight:bold;
+    color:#cc0000;
+    margin-top:1.5vh;
+    box-shadow:0px 2px 3px black;
+}
