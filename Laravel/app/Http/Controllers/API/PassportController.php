@@ -32,8 +32,18 @@ class PassportController extends Controller
         $user->password = bcrypt($request->password);
         $user->role = 'common_user'; //sempre que o usuário criar uma conta ele será um usuário comum, pois os visitantes são as pessoas que não possuem uma conta e os bloggers terão seu cargo atribuído diretamente no banco de dados
         $success['token'] = $user->createToken('FriendFlix')->accessToken;
-        $success['name'] = $user->name;
         $user->save();
         return response()->json(['success' => $success], $this->successStatus);
+    }
+
+    public function login() {
+        //o login será realizado através do e-mail e da senha do usuário
+        if (Auth::attempt(['email' => request('email'), 'password' => request('password')])) {
+            $user = Auth::user();
+            $success['token'] = $user->createToken('FriendFlix')->accessToken;
+            return response()->json(['success' => $success], $this->successStatus);
+        } else {
+            return response()->json(['error' => 'E-mail ou senha inválidos!'], 401);
+        }
     }
 }
