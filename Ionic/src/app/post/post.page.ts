@@ -10,8 +10,8 @@ export class PostPage implements OnInit {
 
   constructor(public postService:PostService) { }
 
-  getPost():void{
-    this.postService.getPost().subscribe(
+  getPost(id):void{
+    this.postService.getPost(id).subscribe(
       (res) => {
         console.log(res);
       }

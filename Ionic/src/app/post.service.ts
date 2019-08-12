@@ -11,7 +11,13 @@ export class PostService {
 
   constructor(public http: HttpClient) { }
 
-  public getPost():Observable<any>{
+  public getPosts():Observable<any>{
     return this.http.get(this.backendURL + 'post');
   }
+
+  public getPost(id):Observable<any>{
+    return this.http.get(this.backendURL + 'post/' + id);
+  }
+
+
 }
