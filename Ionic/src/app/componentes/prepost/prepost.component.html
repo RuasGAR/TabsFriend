@@ -4,16 +4,14 @@
 		<ion-card-title>
 			<ion-chip class="profileinfo">
 				<ion-avatar>
-					<img src ="https://i.ytimg.com/vi/58R-WRSV_A0/maxresdefault.jpg">
+					<ion-img>{{post.user_id.foto}}</ion-img>
 				</ion-avatar>
-				<ion-label><strong>Giovanna</strong></ion-label>
+				<ion-label><strong>{{post.user_id.nome}}</strong></ion-label>
 			</ion-chip>
 		</ion-card-title>
 	</ion-card-header>
 	<ion-card-content class="postext">
-			<h3>Esse próximo filme do Batman promete hein!!!!
-				Robert Pattinson será o melhor e mais detetivesco
-				Morcego dos cinemas!
+			<h3>{{post.texto}}
 			</h3>
 	</ion-card-content>
 </ion-card>

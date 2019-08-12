@@ -1,7 +1,7 @@
 <ion-app>
   <ion-grid>
     <ion-row>
-        <app-prepost></app-prepost>
+        <app-prepost *ngFor="let prepost of preposts"></app-prepost>
     </ion-row>
   </ion-grid>   
   <ion-router-outlet></ion-router-outlet>
