@@ -6,7 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
-
+  preposts;
   constructor() {}
-
+  
+  getPreposts(): void {
+				for (let prepost in this.preposts) {
+					console.log(prepost);
+				}
+      }
+    
 }
+
+  
+
+
