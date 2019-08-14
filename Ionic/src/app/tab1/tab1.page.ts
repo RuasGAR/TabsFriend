@@ -7,7 +7,7 @@ import { PostService } from '../post.service';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
-  preposts;
+  preposts = [];
   constructor() {}
   
   getPreposts(): void {
